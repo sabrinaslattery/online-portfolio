@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Portfolio</title>
+        <meta charset = "utf-8">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1">
+        
+        <link rel="stylesheet" type= "text/css" href="projectstylesheet.css">
+        <link rel = "stylesheet" type = "text/css" href = "portfolioStyle.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Caveat">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Koulen">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <script src="https://use.fontawesome.com/1f0c06a831.js"></script>
+        <script src="portfolioScript.js"></script>
+    </head>
+
+    <body>
+        <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center portfolio" >
+            <img class="avatar" src="profile.jpg" style="width:100%;">
+            <a href="PortfolioHome.html" class="active w3-bar-item w3-button w3-padding-large">
+                <i class="fa fa-home w3-xxlarge"></i>
+                <p>Home</p>
+            </a>
+            <a href="PortfolioResume&Certs.html" class="w3-bar-item w3-button w3-padding-large">
+                <i class="fa fa-user w3-xxlarge"></i>
+                <p>Resume and Certifications</p>
+            </a>
+            <a href="PortfolioPortfolio.html" class="w3-bar-item w3-button w3-padding-large">
+                <i class="fa fa-eye w3-xxlarge"></i>
+                <p>Portfolio</p>
+            </a>
+            <a href="PortfolioContactMe.html" class="w3-bar-item w3-button w3-padding-large">
+                <i class="fa fa-envelope w3-xxlarge"></i>
+                <p style="padding-top: 2px;">Contact Me</p>
+            </a>
+        </nav>
+    <!-- For small screens, hidden on main -->
+        <div class="w3-top w3-hide-large w3-hide-medium portfolio" id="myNavbar">
+            <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+              <a href="PortfolioHome.html" class="w3-bar-item w3-button" 
+                style="width:25% !important">Home</a>
+              <a href="PortfolioResume&Certs.html" class="w3-bar-item w3-button" 
+                style="width:25% !important">Resume and Certifications</a>
+              <a href="PortfolioPortfolio.html" class="w3-bar-item w3-button" 
+                style="width:25% !important">Portfolio</a>
+              <a href="PortfolioContactMe.html" class="w3-bar-item w3-button" 
+                style="width:25% !important">Contact Me</a>
+            </div>
+        </div>
+        
+    <!--Main Content-->
+        <div class="w3-padding-large" id="PortfolioPortfolio.html">
+            <div class="w3-justify w3-padding-64" id="main">
+
+                <h2 class="title-portfolio">Courses and Projects</h2>
+                <hr>
+                <div class="parallax-Java">
+                    <div class="caption">
+                        <span class="caption-border cutout">Java</span>
+                    </div>
+                </div>
+
+                <div class="divider">
+                    <div class="divider title">
+                        | Relevant Coursework |<br><br> 
+                    </div>
+                    Data Structures and Algorithms, Object-Oriented Programming (Java), Advanced Java Programming
+                    <br><br>
+                    <div class="dropdown">
+                    <button class="button projects  button-img dropdown-toggle" data-toggle="dropdown">
+                        List of Projects<span class="caret"></span></button>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-header">Java (.java)</li>
+                                <li><a href="SieveOfE.java" download>Display Primes</a></li>
+                        </ul>
+                    </div>
+                    <br>
+                    <div class="divider note">
+                        <b>Note:</b> Recommended that these programs be opened with a Java IDE.
+                    </div>
+                </div>
+
+                <div class="parallax-Python">
+                    <div class="caption">
+                        <span class="caption-border cutout Python">Python</span>
+                    </div>
+                </div>
+
+                <div class="divider">
+                    <div class="divider title">
+                        | Relevant Coursework |<br><br> 
+                    </div>
+                    Object-Oriented Programming (Python), Advanced Python Programming
+                    <br><br>
+                    <div class="dropdown">
+                        <button class="button projects button-img dropdown-toggle" data-toggle="dropdown">
+                            List of Projects<span class="caret"></span>
+                        </button>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-header">Python (.py)</li>
+                                    <li><a href="PetAdventureGame.py" download>Pet Adventure</a></li>
+                                    <li><a href="HW6.41.py" download>Turtle Control Sample</a></li>
+                            </ul>
+                    </div>
+                    <br>
+                    <div class="divider note">
+                        <b>Note:</b> Recommended that these programs be opened with a Python IDE.
+                    </div>
+                </div>
+
+                <div class="parallax-HTML">
+                    <div class="caption">
+                        <span class="caption-border cutout HTML">HTML/CSS/Javascript</span>
+                    </div>
+                </div>
+
+                <div class="divider">
+                    <div class="divider title">
+                        | Relevant Coursework |<br><br> 
+                    </div>
+                    Web Programming I: Client-Side, WebProgramming II: Server-Side 
+                    <br><br>
+                    <div class="dropdown">
+                        <button class="button projects button-img dropdown-toggle" data-toggle="dropdown">
+                            List of Projects<span class="caret"></span>
+                        </button>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-header">HTML/CSS/Javascript (.html)</li>
+                                    <li><a href="ex12_07.html">Number Slider Puzzle</a></li>
+                                    <li><a href="sadfasdf.html">Bootstrap-Implemented Portfolio Website</a></li>
+                            </ul>
+                    </div>
+                    <br>
+                    <div class="divider note">
+                        <b>Note:</b> Recommended that these DOM files be opened on a desktop or laptop.
+                    </div>
+                </div>
+
+                <div class="parallax-Other">
+                    <div class="caption">
+                        <span class="caption-border cutout Other">Specialty</span>
+                    </div>
+                </div>
+
+                <div class="divider">
+                    <div class="divider title">
+                        | Relevant Coursework |<br><br> 
+                    </div>
+                    Software Application Security, Computational Neuroscience, Machine Learning (Certified) <br>
+                    Network Programming, Software Engineering Best Practices
+                    <br><br>
+                    <div class="dropdown">
+                        <button class="button projects button-img dropdown-toggle" data-toggle="dropdown">
+                            List of Projects<span class="caret"></span>
+                        </button>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-header">Software Application Security (.pdf)</li>
+                                    <li><a href="CIS2261Presentation_SecurityInCloudComputing.pdf" download>
+                                        Research Examining Security in Cloud Computing</a></li>
+                            </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </body>   
+
+    <footer class="portfolio">
+        <div class="container-fluid text-center">
+            <a href="http://www.linkedin.com/in/sabrina-slattery-803076171">
+                <i class="fa fa-linkedin-square w3-hover-opacity w3-xlarge" aria-hidden="true"></i>
+            </a>
+            <a href="http://github.com/coderbellabri">
+                <i class="fa fa-github w3-hover-opacity w3-xlarge" aria-hidden="true"></i>
+            </a>
+            <a href="http://www.instagram.com/coderbellabri/">
+                <i class="fa fa-instagram w3-hover-opacity w3-xlarge" aria-hidden="true"></i>
+            </a>
+            <br><br>
+            <p>Created by Sabrina Slattery • Last Updated August 28 2020</p>
+        </div>
+    </footer>
+
+</html>

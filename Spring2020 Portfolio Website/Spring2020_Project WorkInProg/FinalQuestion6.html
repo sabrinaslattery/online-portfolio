@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>JavaScript Array</h2>
+        <button onclick="myFunction()">Try it</button>
+        <p id="demo"></p>
+
+        <script>
+            var t = ["Banana", "Orange", "Apple", "Mango"];
+            document.getElementById("demo").innerHTML = t;
+
+            function myFunction() {
+                document.writeln( "<table border = ’1’>" );
+                s= "<tr><td>&nbsp</td>" ;
+                n = 0;
+
+                for ( var i in t ) {
+                    n = Math.max (n,t[i].length)
+                }
+
+                for (var i=0; i < n; ++i ) {
+                    s += "<th>" + i + "</th>"
+                }
+
+                s += "</tr>"
+                document.writeln( s  );       
+                /*
+                xxx fill in the missing codes
+                */
+                document.writeln( "</table>" );    
+            }
+        </script>
+
+    </body>
+</html>

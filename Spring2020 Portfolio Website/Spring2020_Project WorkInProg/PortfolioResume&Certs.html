@@ -1,0 +1,174 @@
+<!-- 
+To-Do:
+    9) Resume Page: include 
+        9b) Summarize main points and skills in thought-bubble-like boxes
+        9c) Remove pdf image from page
+    10) REMOVE actual resume from website!!!
+    11) Make collapsibles https://www.w3schools.com/howto/howto_js_collapsible.asp
+        11a) Projects
+        11b) Courses
+    
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Resume and Certifications</title>
+        <meta charset = "utf-8">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1">
+        
+        <link rel="stylesheet" type= "text/css" href="projectstylesheet.css">
+        <link rel = "stylesheet" type = "text/css" href = "portfolioStyle.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Caveat">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Koulen">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <script src="https://use.fontawesome.com/1f0c06a831.js"></script>
+        <script src="portfolioScript.js"></script>
+    </head>
+
+    <body>
+    <!-- Navigation -->
+        <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+            <img class="avatar" src="profile.jpg" style="width:100%;">
+            <a href="PortfolioHome.html" class="active w3-bar-item w3-button w3-padding-large">
+                <i class="fa fa-home w3-xxlarge"></i>
+                <p>Home</p>
+            </a>
+            <a href="PortfolioResume&Certs.html" class="w3-bar-item w3-button w3-padding-large">
+                <i class="fa fa-user w3-xxlarge"></i>
+                <p>Resume and Certifications</p>
+            </a>
+            <a href="PortfolioPortfolio.html" class="w3-bar-item w3-button w3-padding-large">
+                <i class="fa fa-eye w3-xxlarge"></i>
+                <p>Portfolio</p>
+            </a>
+            <a href="PortfolioContactMe.html" class="w3-bar-item w3-button w3-padding-large">
+                <i class="fa fa-envelope w3-xxlarge"></i>
+                <p style="padding-top: 2px;">Contact Me</p>
+            </a>
+        </nav>
+    <!-- For small screens, hidden on main -->
+        <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+            <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+              <a href="PortfolioHome.html" class="w3-bar-item w3-button" 
+                style="width:25% !important">Home</a>
+              <a href="PortfolioResume&Certs.html" class="w3-bar-item w3-button" 
+                style="width:25% !important">Resume and Certifications</a>
+              <a href="PortfolioPortfolio.html" class="w3-bar-item w3-button" 
+                style="width:25% !important">Portfolio</a>
+              <a href="PortfolioContactMe.html" class="w3-bar-item w3-button" 
+                style="width:25% !important">Contact Me</a>
+            </div>
+        </div>
+
+    <!-- Main Content -->
+        <div class="w3-padding-large" id="PortfolioProjects&Resume.html">
+            <div class="w3-justify w3-padding-64" id="main">
+
+                <h2 style="text-align:center;font-weight: bold;">Resume and Certifications</h2>
+                <hr>
+                <p style="text-align: center;">I'm an undergraduate senior at Notre Dame de Namur University. 
+                    I'm majoring in Computer Science on the Software Engineering track, and I'm looking to graduate
+                    May 2021. I'm relatively new to the field of computer science,
+                    but in the past two years I've found that it's something I not only 
+                    excel in, but am truly passionate about. I'm fluent in Java, Python, and HTML/CSS/Javascript, 
+                    and I've explored languages such as C++, Ruby, and Lua. 
+                    I'm interested in Machine Learning and AI, as well as software security within cloud computing.
+                    <br><br>
+                    Currently, I'm looking to become a software engineer and as always, I'm open to any and all advice, 
+                    mentoring, or pointers for the field.
+                    <br><br>
+                    Dont forget to check out my portfolio –!
+                    <br>
+                </p>
+                <!-- <button class="button responsive center" alt="Resume Download">
+                    <a href="SlatteryTechnicalResume.pdf" alt="Resume">
+                    <i class="fa fa-download" aria-hidden="true"></i>
+                    Download Resume</a>
+                </button> -->
+                
+                <hr>
+
+                <h2>Education</h2>
+                <br>
+                <div class="edu row">
+                    <div class="edu column">
+                    <button type="button" class="WSU collapsible">Washington State University</button>
+                        <div class="WSU content column">
+                            Attended: August 2015 – May 2017<br>
+                            <img src="WSU_Logo.png" alt="WSU" class="responsive" 
+                                style="height:150px; width:150px;">
+                        </div>
+                    </div>
+                    <div class="edu column">
+                    <button type="button" class="WVC collapsible">West Valley College</button>
+                        <div class="WVC content column">
+                            Attended: August 2018 – December 2020<br>
+                            <img src="WVC_Logo.jpg" alt="WVC" class="responsive" 
+                                style="height:150px; width:150px;">
+                        </div>
+                    </div>
+                    <div class="edu column">
+                    <button type="button" class="NDNU collapsible">Notre Dame de Namur University</button>
+                        <div class="NDNU content column">
+                            Attended: January 2020 – May 2021<br>
+                            <img src="NDNU_Logo.png" alt="NDNU" class="responsive" 
+                                style="height:150px; width:150px;">
+                        </div>
+                    </div>
+                </div>
+
+                <br>
+                <hr>
+
+                    
+                    <!-- <div class="time_container r">
+                        <div class="timeContent text-center">
+                            <h3>Summer 2018</h3>
+                            <h6>Technology Instructor at EdventureMore</h6>
+                            <hr class="tl">
+                            <p><img src="Edmo.jpg" alt="EDMO" class="responsive" 
+                                style="height:150px; width:100px;">
+                                <img src="Edmo_Logo.jpg" alt="EDMO_Logo" class="responsive" 
+                                style="height:150px; width:150px;"></p>
+                        </div>
+                    </div> -->
+                    
+                    <!-- <div class="time_container r">
+                        <div class="timeContent text-center">
+                            <h3>Jan 2016 - Jan 2017</h3>
+                            <h6>Student Researcher at Dr. Fuch's Lab</h6>
+                            <hr class="tl">
+                            <p><img src="Fuchs.jpg" alt="Fuchs" class="responsive" 
+                                style="height:150px; width:250px;"></p>
+                        </div>
+                    </div> -->
+
+            </div>
+        </div>
+
+    </body>
+
+    <footer>
+        <div class="container-fluid text-center">
+            <a href="http://www.linkedin.com/in/sabrina-slattery-803076171">
+                <i class="fa fa-linkedin-square w3-hover-opacity w3-xlarge" aria-hidden="true"></i>
+            </a>
+            <a href="http://github.com/coderbellabri">
+                <i class="fa fa-github w3-hover-opacity w3-xlarge" aria-hidden="true"></i>
+            </a>
+            <a href="http://www.instagram.com/coderbellabri/">
+                <i class="fa fa-instagram w3-hover-opacity w3-xlarge" aria-hidden="true"></i>
+            </a>
+            <br><br>
+            <p>Created by Sabrina Slattery • Last Updated August 28 2020</p>
+        </div>
+    </footer>
+
+</html>

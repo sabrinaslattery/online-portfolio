@@ -1,0 +1,206 @@
+<!-- 
+To-Do for Contact Me
+    1) Overaly effect when contact form is submitted
+        1a)https://www.w3schools.com/howto/howto_css_overlay.asp
+        
+ -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contact Me</title>
+        <meta charset = "utf-8">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1">
+        
+        <link rel="stylesheet" type= "text/css" href="projectstylesheet.css">
+        <link rel = "stylesheet" type = "text/css" href = "portfolioStyle.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Caveat">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Great Vibes">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Koulen">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <script src="https://use.fontawesome.com/1f0c06a831.js"></script>
+        <script src="portfolioScript.js"></script>
+    </head>
+
+    <body>
+        <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+            <img class="avatar" src="profile.jpg" style="width:100%;">
+            <a href="PortfolioHome.html" class="active w3-bar-item w3-button w3-padding-large">
+                <i class="fa fa-home w3-xxlarge"></i>
+                <p>Home</p>
+            </a>
+            <a href="PortfolioResume&Certs.html" class="w3-bar-item w3-button w3-padding-large">
+                <i class="fa fa-user w3-xxlarge"></i>
+                <p>Resume and Certifications</p>
+            </a>
+            <a href="PortfolioPortfolio.html" class="w3-bar-item w3-button w3-padding-large">
+                <i class="fa fa-eye w3-xxlarge"></i>
+                <p>Portfolio</p>
+            </a>
+            <a href="PortfolioContactMe.html" class="w3-bar-item w3-button w3-padding-large">
+                <i class="fa fa-envelope w3-xxlarge"></i>
+                <p style="padding-top: 2px;">Contact Me</p>
+            </a>
+        </nav>
+    <!-- For small screens, hidden on main -->
+        <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+            <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+              <a href="PortfolioHome.html" class="w3-bar-item w3-button" 
+                style="width:25% !important">Home</a>
+              <a href="PortfolioResume&Certs.html" class="w3-bar-item w3-button" 
+                style="width:25% !important">Resume and Certifications</a>
+              <a href="PortfolioPortfolio.html" class="w3-bar-item w3-button" 
+                style="width:25% !important">Portfolio</a>
+              <a href="PortfolioContactMe.html" class="w3-bar-item w3-button" 
+                style="width:25% !important">Contact Me</a>
+            </div>
+        </div>
+
+    <!--Main Content-->
+    <div class="w3-padding-large" id="PortfolioContactMe.html">
+        <div class="w3-justify w3-padding-64" id="main4">
+            
+            <h2 class="font-contact">Contact Me</h2>
+            <hr>
+            <p>Want to get in touch? Find me on LinkedIn, GitHub, and Instagram.<br><br><br>
+            </p>
+
+            <div class="insta">
+                <div class="flipbox">
+                    <div class="flipbox-inner">
+                        <div class="flipbox-front">
+                            <h1>Instagram</h1>
+                                <i class="fa fa-instagram w3-xxxlarge" aria-hidden="true"></i>
+                        </div>
+                        <div class="flipbox-back">
+                            <h2>
+                                <a href="http://www.instagram.com/coderbellabri/">
+                                    @coderbellabri</a>
+                            </h2>
+                            <a href="http://www.instagram.com/coderbellabri/">
+                                <img src="igprofile.png"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="linkedin">
+                <div class="flipbox">
+                    <div class="flipbox-inner">
+                        <div class="flipbox-front">
+                            <h1>LinkedIn</h1>
+                            <i class="fa fa-linkedin-square w3-xxxlarge" aria-hidden="true"></i>
+                        </div>
+                        <div class="flipbox-back">
+                            <h2>
+                                <a href="http://www.linkedin.com/in/sabrina-slattery-803076171">
+                                    Sabrina Slattery</a>
+                            </h2>
+                            <a href="http://www.linkedin.com/in/sabrina-slattery-803076171">
+                                <img src="profile.jpg"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="github">
+                <div class="flipbox">
+                    <div class="flipbox-inner">
+                        <div class="flipbox-front">
+                            <h1>Github</h1>
+                            <i class="fa fa-github w3-xxxlarge" aria-hidden="true"></i>
+                        </div>
+                        <div class="flipbox-back">
+                            <h2>
+                                <a href="http://github.com/coderbellabri">
+                                coderbellabri
+                                </a>
+                            </h2>
+                            <a href="http://github.com/coderbellabri">
+                            <img src="ghprofile.png"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- There's only a million breaks here bc I couldnt figure out how to format the fricken p element below  -->
+            <br><br><br><br><br><br><br><br><br>
+            <p>Or fill out the form below and I'll get back to you as soon as I can!</p>
+            <hr>
+            <div class="container-contact responsive">
+                <p><br><br>– Let me know if you have any questions or comments. –</p>
+
+                <div class="row-contact">
+                    <div class="column-contact" style="width:auto;">
+                        <form id="ContactForm" action="mailto:brinaslattery@gmail.com" method="POST"
+                            enctype="multipart/form-data" name="ContactFromPortfolio">
+                            <label for="firstName"></label>
+                                <input type="text" class="contact-box" id="firstName" name="firstName" placeholder="First Name" required>
+                            <label for="lastName"></label>
+                                <input type="text" class="contact-box" id="lastName" name="lastName" placeholder="Last Name">
+                            <label for="email"></label>
+                                <input type="email" class="contact-box" id="email" name="email" placeholder="Your E-mail" required>
+                            <label for="phone"></label>
+                                <input type="tel" class="contact-box" id="phone" name="phone"placeholder="555-555-5555" 
+                                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                            <label for="contactType">What's the best way to reach you?</label>
+                            <select id="contactType" class="contact-box" name="contact" required>
+                                <option class="contact-box" value="email">E-mail</option>
+                                <option class="contact-box" value="phoneC">Phone - Call</option>
+                                <option class="contact-box" value="phoneT">Phone - Text</option>
+                            </select>
+                            <br><br>
+                            <label for="subject">Subject</label>
+                                <textarea id="subject" class="contact-box" name="subject"></textarea>
+                            <br><br>
+                            <input type="submit" id="contact-submit" value="Submit" >
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+
+            <h2 class="font-contact">Thanks for visiting!</h2>
+
+        <!-- Google Maps code 
+            <div id="googleMap" style="width:600px;height:200px;">
+            </div>
+            <script>
+                function myMap() {
+                    var mapProp= {
+                        center:new google.maps.LatLng(37.518532, -122.287033),
+                        zoom:18
+                    };
+                    var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+                    };
+            </script>
+            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDxTnXlpwN3xmlGGa7nUyj5aBzaltSsonc&callback=myMap"></script>
+        -->
+        </div>
+    </div>
+
+    </body>
+
+    <footer>
+        <div class="container-fluid text-center">
+            <a href="http://www.linkedin.com/in/sabrina-slattery-803076171">
+                <i class="fa fa-linkedin-square w3-hover-opacity w3-xlarge" aria-hidden="true"></i>
+            </a>
+            <a href="http://github.com/coderbellabri">
+                <i class="fa fa-github w3-hover-opacity w3-xlarge" aria-hidden="true"></i>
+            </a>
+            <a href="http://www.instagram.com/coderbellabri/">
+                <i class="fa fa-instagram w3-hover-opacity w3-xlarge" aria-hidden="true"></i>
+            </a>
+            <br><br>
+            <p>Created by Sabrina Slattery • Last Updated August 28 2020</p>
+        </div>
+    </footer>
+
+</html>
