@@ -28,16 +28,6 @@
             text-align: center;
         }
 
-          /* h3 {
-            font: 28px "Koulen" !important;
-            font-weight: 400 !important;
-          }
-
-          h6 {
-            font: 18px "Koulen" !important;
-            font-weight: 400 !important;
-          } */
-
         hr {
             width: 100%;
             padding: 10 0 10 0
@@ -148,27 +138,41 @@
             font-family: "Caveat";
             font-size: 18px;
             text-decoration: none;
-            background-image: linear-gradient(to bottom, white 0,
-            rgb(254, 247, 247) 100%);
             background-position: 0 0em;
-            background-size: 0 100%;
-            background-repeat: no-repeat;
-            transition: background .5s;
         }
 
         i.fa, nav.portfolio, nav p {
             color: rgb(170, 108, 108);
             font-style:rgb(170, 108, 108);
         }
-  
+
         .w3-bar-block a:active {
             background-color: #dfdcdc ;
         }
 
         .w3-bar-block a:hover {
             color: rgb(170, 108, 108);
-            background-size: 100% 100%;
-            background-image: white;
+            background: white;
+        }
+
+        /* Nav bar animation on hover */
+        @keyframes shake {
+            0% { transform: translate(0px, 0px) rotate(0deg); }
+            10% { transform: translate(0px, 0px) rotate(0deg); }
+            20% { transform: translate(0px, 0px) rotate(0deg); }
+            30% { transform: translate(0px, 0px) rotate(-10deg); }
+            40% { transform: translate(0px, 0px) rotate(0deg); }
+            50% { transform: translate(0px, 0px) rotate(10deg); }
+            60% { transform: translate(0px, 0px) rotate(0deg); }
+            70% { transform: translate(0px, 0px) rotate(-10deg); }
+            80% { transform: translate(0px, 0px) rotate(0deg); }
+            90% { transform: translate(0px, 0px) rotate(0deg); }
+            100% { transform: translate(0px, 0px) rotate(0deg); }
+        }
+        .fa:hover{
+            animation: shake 0.5s;
+            animation-iteration-count:1;
+            color: rgb(170, 108, 108);
         }
 
       /* Nav bar color change on page load  */
@@ -184,21 +188,20 @@
             from { color: rgb(170, 108, 108);}
             to { color: rgb(78, 78, 160);}
         }
-
         .w3-bar-block.portfolio a {
             -webkit-animation: color_change_portfolio 2s linear 0.5s normal forwards;
             -moz-animation: color_change_portfolio 2s linear 0.5s normal forwards;
             animation: color_change_portfolio 2s linear 0.5s normal forwards;
-            background-image: linear-gradient(to bottom, white 0,
-            rgb(236, 236, 255) 100%);
         }
-
         .portfolio i.fa, .portfolio p {
             -webkit-animation: color_change_portfolio 2s linear 0.5s normal forwards;
             -moz-animation: color_change_portfolio 2s linear 0.5s normal forwards;
             animation: color_change_portfolio 2s linear 0.5s normal forwards;
         }
-      /* End color change  */
+
+        .portfolio .fa:hover {
+            color: rgb(78, 78, 160)
+        }
 
         .responsive {
               height: auto;
@@ -275,22 +278,22 @@
         }
 
         .parallax-HTML {
-            background-image: url("JS_image.jpg");
+            background-image: url("portfolio_images/JS_image.jpg");
             min-height: 500px;
         }
 
         .parallax-Java {
-            background-image: url("Java_image.gif");
+            background-image: url("portfolio_images/Java_image.gif");
             min-height: 500px;
         }
 
         .parallax-Python {
-            background-image: url("Python_image.jpg");
+            background-image: url("portfolio_images/Python_image.jpg");
             min-height: 500px;
         }
 
         .parallax-Other {
-            background-image: url("Other_image.gif");
+            background-image: url("portfolio_images/Other_image.gif");
             min-height: 500px;
         }
 
@@ -367,7 +370,7 @@
         }
 
     /* End Portfolio Section */
-    /* Resume and Cert section */
+    /* About Me section */
         *{
             box-sizing: border-box;
         }
@@ -417,7 +420,6 @@
             align-items: center;
             overflow: hidden;
             width: 100%;
-            background-image: linear-gradient(to bottom, white,rgb(241, 227, 227));
         }
 
     /* End Resume and Certs section */
@@ -537,6 +539,7 @@
         .github img{
             width: 85px;
             height: 85px;
+            border: 0px;
         }
 
         .linkedin h1, .insta h1, .github h1{
@@ -597,7 +600,7 @@
             width: 100%;
             border: none;
             border-radius: 5px;
-            background-image: url("Other_image.jpg");
+            background-image: url("portfolio_images/Other_image.jpg");
             margin: 0 0 5vw 0;
             height: auto;
             align-items:stretch;

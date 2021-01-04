@@ -1,35 +1,3 @@
-// Buttons for Dark Mode
-
-// For future reference: make one button to toggle between, and find way to make changes stick when switching between
-// pages in portfolio
-
-// $(document).ready(function(){
-//     $(".button-night").click(function() {
-//         $("body").css({"background-color": "rgb(91, 88, 88)", "color": "black"});
-//         $(".jumbotron h1").css({"color": "lightgrey"});
-//         $(".sidenav").css({"background-color": "rgb(118, 72, 72)", "color": "lightgrey" });
-//         $(".nav-tabs li a").css({"color": "lightgrey"});
-//         $("button").css({"color": "rgb(140, 134, 134)", "background-color": "rgb(46, 44, 44)",
-//         "border": "1px solid black"});
-//         $
-//     });
-//     $(".button-reg").click(function() {
-//         $("body").css({"background-color": "white", "color": "rgb(91, 88, 88)"});
-//         $(".jumbotron h1").css({"color": "black"});
-//         $(".sidenav").css({"background-color": "#f1f1f1", "color": "rgb(170, 108, 108)"});
-//         $(".nav-tabs li a").css({"color": "rgb(170, 108, 108)"});
-//         $("button").css({"color": "rgb(170, 108, 108)", "background-color": "white",
-//         "border": "none"});
-//     });
-// });
-
-// // Change Body Background
-// $(document).ready(function() {
-//     $(".button-toggle").click(function() {
-//         $("body").toggleClass("newBackground");
-//     });
-// });
-
 //Section Tag Animation
 $(document).ready(function() {
     $(".animation1").click(function() {
@@ -52,6 +20,7 @@ $(document).ready(function() {
         section3.animate({opacity: '0.0'}, "slow");
         section3.animate({opacity: '1.0'}, "slow");
     });
+
 // Submit-Form Contact Change
     $("#contact-submit").click(function(event) {
         $('#contact-submit').val('Processing ...');
@@ -61,6 +30,7 @@ $(document).ready(function() {
         setTimeout("location.reload(true);", 8000);
         $('#contact-submit').val('Thank you! Allow 2-3 days for a response.\b Page will automatically reload');
     });
+    
 // Collapsible buttons
     var coll = document.getElementsByClassName("collapsible");
     var i;
@@ -77,3 +47,24 @@ $(document).ready(function() {
     }
 
 });
+
+// Buttons for Dark Mode
+// $(document).ready(function(){
+//     $(".button-night").click(function() {
+//         $("body").css({"background-color": "rgb(91, 88, 88)", "color": "black"});
+//         $(".jumbotron h1").css({"color": "lightgrey"});
+//         $(".sidenav").css({"background-color": "rgb(118, 72, 72)", "color": "lightgrey" });
+//         $(".nav-tabs li a").css({"color": "lightgrey"});
+//         $("button").css({"color": "rgb(140, 134, 134)", "background-color": "rgb(46, 44, 44)",
+//         "border": "1px solid black"});
+//         $
+//     });
+//     $(".button-reg").click(function() {
+//         $("body").css({"background-color": "white", "color": "rgb(91, 88, 88)"});
+//         $(".jumbotron h1").css({"color": "black"});
+//         $(".sidenav").css({"background-color": "#f1f1f1", "color": "rgb(170, 108, 108)"});
+//         $(".nav-tabs li a").css({"color": "rgb(170, 108, 108)"});
+//         $("button").css({"color": "rgb(170, 108, 108)", "background-color": "white",
+//         "border": "none"});
+//     });
+// });
