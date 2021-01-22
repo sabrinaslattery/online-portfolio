@@ -1,0 +1,734 @@
+    /* General Page */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font: 18px "Lato" 100!important;
+            color: rgb(91, 88, 88);
+        }
+
+        a {
+            color:rgb(170, 108, 108);
+            text-decoration: none;
+        }
+
+        a:hover{
+            color:rgba(170, 108, 108, 0.571);
+            text-decoration: none;
+        }
+
+        .divider a:hover {
+            color:rgb(78, 78, 160);
+            text-decoration: none;
+        }
+
+        h2 {
+            font: 36px "Raleway" !important;
+            text-align: center;
+        }
+
+        hr {
+            width: 100%;
+            padding: 10 0 10 0
+        }
+          
+        .button {
+            padding: 6px 6px;
+            width: 200px !important;
+            background-color:white;
+            color: rgb(170, 108, 108);
+            border: none;
+            text-align: center;
+            text-decoration: none;
+            margin: 8px;
+            justify-content: center;
+        }
+
+        .button.projects {
+            color: rgb(78, 78, 160);
+            border: 1px solid rgb(78, 78, 160);
+            border-radius: 1px;
+            background-color: transparent;
+        }
+
+        .dropdown {
+            display: inline-block;
+        }
+
+        .dropdown-menu {
+            position: absolute;
+            min-width: 100%;
+            z-index:1;
+            display: block;
+            opacity: 0;
+            transition: all 0.3s linear;
+            -webkit-transition: all 0.3s linear;
+        }
+
+        .dropdown-menu a:hover {
+            background-color: rgb(198, 195, 195);
+        }
+
+        .dropdown:hover .dropdown-menu {
+            display: block;
+            opacity: 1;
+        }
+
+        .row.content {
+            height: auto;
+        }
+
+        #main {
+            margin-left: 200px;
+            left:200px;
+        }
+
+        ::selection {
+            color: rgba(101, 100, 100, 0.55);
+            background: rgb(237, 237, 237);
+        }
+        ::-moz-selection {
+            color: rgba(101, 100, 100, 0.55);
+            background: rgb(237, 237, 237);
+        }
+        ::-webkit-selection {
+            color: rgba(101, 100, 100, 0.55);
+            background: rgb(237, 237, 237);
+        }
+
+        #main2 {
+            margin-left:200px;
+        }
+    /* End general page */
+    /* Nav tabs Section */
+        nav {
+            background-color: #f1f1f1;
+            height: auto;
+            color: rgb(170, 108, 108);
+        }
+
+        .avatar {
+            border-radius: 3px;
+        }
+
+        h1.title {
+            font-family: "Great Vibes";
+            font-size: 60px;
+            letter-spacing: 3px;
+        }
+
+        p.title-caption {
+            font: "Raleway";
+            font-size: 20px;
+        }
+
+        .w3-sidebar {
+            margin-left: 15px;
+            margin-top: 35px;
+            width: 150px !important;
+        }
+
+        .w3-row-padding, .avatar {
+            margin-bottom:50px;
+        }
+
+        .w3-bar-block a{
+            color: rgb(170, 108, 108);
+            font-family: "Caveat";
+            font-size: 18px;
+            text-decoration: none;
+            background-position: 0 0em;
+        }
+
+        i.fa, nav.portfolio, nav p {
+            color: rgb(170, 108, 108);
+            font-style:rgb(170, 108, 108);
+        }
+
+        .w3-bar-block a:active {
+            background-color: #dfdcdc ;
+        }
+
+        .w3-bar-block a:hover {
+            color: rgb(170, 108, 108);
+            background: white;
+        }
+
+        /* Nav bar animation on hover */
+        @keyframes shake {
+            0% { transform: translate(0px, 0px) rotate(0deg); }
+            10% { transform: translate(0px, 0px) rotate(0deg); }
+            20% { transform: translate(0px, 0px) rotate(0deg); }
+            30% { transform: translate(0px, 0px) rotate(-10deg); }
+            40% { transform: translate(0px, 0px) rotate(0deg); }
+            50% { transform: translate(0px, 0px) rotate(10deg); }
+            60% { transform: translate(0px, 0px) rotate(0deg); }
+            70% { transform: translate(0px, 0px) rotate(-10deg); }
+            80% { transform: translate(0px, 0px) rotate(0deg); }
+            90% { transform: translate(0px, 0px) rotate(0deg); }
+            100% { transform: translate(0px, 0px) rotate(0deg); }
+        }
+        .fa:hover{
+            animation: shake 0.5s;
+            animation-iteration-count:1;
+            color: rgb(170, 108, 108);
+        }
+
+      /* Nav bar color change on page load  */
+        @-webkit-keyframes color_change_portfolio {
+            from { color: rgb(170, 108, 108);}
+            to { color: rgb(78, 78, 160);}
+        }
+        @-moz-keyframes color_change_portfolio {
+            from { color: rgb(170, 108, 108);}
+            to { color: rgb(78, 78, 160);}
+        }
+        @keyframes color_change_portfolio {
+            from { color: rgb(170, 108, 108);}
+            to { color: rgb(78, 78, 160);}
+        }
+        .w3-bar-block.portfolio a {
+            -webkit-animation: color_change_portfolio 2s linear 0.5s normal forwards;
+            -moz-animation: color_change_portfolio 2s linear 0.5s normal forwards;
+            animation: color_change_portfolio 2s linear 0.5s normal forwards;
+        }
+        .portfolio i.fa, .portfolio p {
+            -webkit-animation: color_change_portfolio 2s linear 0.5s normal forwards;
+            -moz-animation: color_change_portfolio 2s linear 0.5s normal forwards;
+            animation: color_change_portfolio 2s linear 0.5s normal forwards;
+        }
+
+        .portfolio .fa:hover {
+            color: rgb(78, 78, 160)
+        }
+
+        .responsive {
+              height: auto;
+              width: 100%;
+        }
+
+        .button-wrapper {
+            display: inline;
+            position: absolute;
+            padding: 5px;
+        }
+    /* End Nav Tabs section  */
+    /* About Me section */
+        header h1{
+            padding-top: 30px;
+            font: 52px Didot, serif;
+        }
+
+        #jumbo {
+            padding: 2px;
+            background: none;
+        }
+
+        .carousel {
+            border-radius: 10px 10px 10px 10px;
+            overflow: hidden; 
+        }
+
+        .carousel-caption {
+            font: 40px "Caveat"  !important;
+            letter-spacing: 1.5px;;
+            color: black;
+            display: inline;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 75px;
+            text-shadow: 2px 8px 6px rgba(0,0,0,0.2), 0px -5px 40px rgba(255,255,255,0.3);
+        }
+
+        .item {
+            height: 250px;
+            width: 100%;
+        }
+
+        .column{
+            float: left;
+            width: 25%;
+            padding: 0 5px;
+        }
+
+        .home.row{
+            margin: 0 -5px;
+        }
+
+        .home.row::after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            padding: 16px;
+            text-align: center;
+            background-color: #444;
+            color: white;
+        }
+
+    /* End about me section */
+    /* Portfolio Section */
+        h2.title-portfolio {
+            letter-spacing: 3px;
+            font-weight: bolder;
+        }
+
+        .parallax-HTML {
+            background-image: url("portfolio_images/JS_image.jpg");
+            min-height: 500px;
+        }
+
+        .parallax-Java {
+            background-image: url("portfolio_images/Java_image.gif");
+            min-height: 500px;
+        }
+
+        .parallax-Python {
+            background-image: url("portfolio_images/Python_image.jpg");
+            min-height: 500px;
+        }
+
+        .parallax-Other {
+            background-image: url("portfolio_images/Other_image.gif");
+            min-height: 500px;
+        }
+
+        .parallax-HTML, .parallax-Java, .parallax-Python, .parallax-Other {
+            position: relative;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .caption {
+            position: absolute;
+            text-align: center;
+            top: 50%;
+            left: 8%;
+            width: 100%; 
+            color: white;
+        }
+
+        .caption span.cutout {
+            background-color: white;
+            color: black;
+            font-size: 4vw;
+            font-weight: bold;
+            margin: 0 auto;
+            width: 20%;
+            text-align: center;
+            position: absolute;
+            mix-blend-mode: screen;
+            transform: translate(-89%, -50%);
+            padding: 10px;
+        }
+
+        .caption span.cutout.Python {
+            width: 25%;
+            transform: translate(-83%, -50%);
+        }
+
+        .caption span.cutout.HTML {
+            font-size: 3vw;
+            width: 55%;
+            transform: translate(-63%, -50%);
+        }
+
+        .caption span.cutout.Other {
+            width: 35%;
+            transform: translate(-73%, -50%);
+        }
+
+        .divider {
+            font: 14px "Raleway";
+            color: gray;
+            text-align: center;
+            background-color: white;
+            /* background-image: radial-gradient(circle, rgba(120, 120, 120, 0.94),rgba(120, 120, 120, 0.968),
+                rgb(184, 184, 184)); */
+            padding: 10px;
+        }
+
+        .divider.end {
+            background-image: none;
+            height: 300px;
+        }
+
+        .divider.title {
+            font: 16px "Raleway";
+            font-weight: bold;
+        }
+
+        .divider.note {
+            font: 12px "Raleway";
+            color: gray;
+        }
+
+    /* End Portfolio Section */
+    /* About Me section */
+        *{
+            box-sizing: border-box;
+        }
+
+        .edu.row{
+            margin: 0 -5px;
+        }
+
+        .edu.row::after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .edu.column {
+            width: 33.3%;
+        }
+
+        .edu button{
+            width: 100%;
+        }
+
+        .collapsible {
+            background-color: rgb(117, 117, 117);
+            font: 16px "Raleway";
+            color: white;
+            cursor: pointer;
+            padding: 20px;
+            text-align: center;
+            border: rgb(255, 219, 13);
+            outline: none;
+            align-items: center;
+        }
+
+        .active, .collapsible:hover{
+            background-color: rgb(199, 199, 199);
+            color: rgb(71, 71, 71);
+        }
+
+        .content{
+            font: "Raleway" gray;
+            padding: 5px 0px 5px;
+            float:left;
+            display: none;
+            height: 300px;
+            text-align: center;
+            align-items: center;
+            overflow: hidden;
+            width: 100%;
+        }
+
+    /* End Resume and Certs section */
+    /* Contact Me Section  */
+        #main4 {
+            margin-left: 200px;
+        }
+
+        h2.font-contact{
+            font-family: "Great Vibes" !important;
+            font-size: 65px !important;
+            letter-spacing: 3px;
+            margin-top: 20px;
+        }
+
+        .insta, .linkedin, .github {
+            position: absolute;
+            top: 30%;
+        }
+        .insta {
+            left:35vw;
+        }
+        .linkedin{
+            left: 50vw;
+        }
+        .github {
+            left:65vw;
+        }
+
+        .flipbox {
+            background-color: transparent;
+            padding-top: 5px;
+            width: 155px;
+            height: 155px;
+            perspective: 1000px;
+        }
+
+        .flipbox-inner {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            margin: 0 0 16px 10px;
+            text-align: center;
+            padding-bottom: 20px;
+            box-shadow: 5px 10px lightgray;
+            border-radius: 5px;
+            transition: transform 0.8s;
+            transform-style: preserve-3d;
+        }
+
+        .flipbox:hover .flipbox-inner{
+            transform: rotateY(180deg);
+        }
+
+        .flipbox-front, .flipbox-back {
+            position: absolute;
+            border-radius: 5px;
+            padding-bottom: 20px;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden;
+            -moz-backface-visibility: hidden;
+            backface-visibility: hidden;
+        }
+
+        .linkedin .flipbox-front {
+            color: white;
+            background-color: rgb(61, 134, 189);
+        }
+
+        .linkedin .flipbox-back {
+            color: white;
+            background-color: rgb(61, 134, 189);
+            transform: rotateY(180deg);
+        }
+
+        .insta .flipbox-front {
+            color: white;
+            background-image: linear-gradient(to bottom, purple, pink, orange, red);
+        }
+
+        .insta .flipbox-back {
+            color: white;
+            background-image: linear-gradient(to bottom, purple, pink, orange, red);
+            transform: rotateY(180deg);
+        }
+
+        .github .flipbox-front {
+            color: white;
+            background-color: rgb(85, 84, 84);
+        }
+
+        .github .flipbox-back {
+            color: white;
+            background-color: rgb(85, 84, 84);
+            transform: rotateY(180deg);
+        }
+
+        .flipbox i.fa, .flipbox i.fa:hover, .linkedin img {
+            color: white;
+            height: 100px;
+            width: 100px;
+            text-decoration: none;
+        }
+
+        .linkedin img, .insta img, .github img{
+            border: 1px solid white;
+            border-radius: 3px;
+        }
+
+        .insta img{
+            width: 85px;
+            height: 85px;
+            border: none;
+        }
+
+        .github img{
+            width: 85px;
+            height: 85px;
+            border: 0px;
+        }
+
+        .linkedin h1, .insta h1, .github h1{
+            font: 30px "Raleway" !important;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .linkedin h2, .insta h2, .github h2{
+            font: 18px "Raleway" !important;
+            text-align: center;
+            padding: 2px;
+        }
+
+        .github h2, .insta h2{
+            padding-bottom: 10px;
+        }
+
+        #main4 a:hover{
+            color: lightgray;
+        }
+      /* end flipboxes */
+
+        ul.no-bullets{
+            list-style-type: none;
+        }
+
+        #main4 p{
+            font: 16px "Raleway";
+            text-align: center;
+        }
+
+        input[type=text], input[type=email], input[type=tel], select, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            margin: 0px 8px 12px 10px;
+            resize: vertical;
+            color: rgb(70, 70, 70);
+            align-items:center;
+        }
+
+        input[type=submit] {
+            background-color:rgba(170, 108, 108, 0.9);
+            color: white;
+            padding: 12px 20px;
+            margin: 0px 8px 12px 10px;
+            border: none;
+            cursor: pointer;
+            align-items:center;
+        }
+
+        input[type=submit]:hover {
+            background-color:rgba(170, 108, 108, 0.571);
+        }
+
+        .container-contact {
+            width: 100%;
+            border: none;
+            border-radius: 5px;
+            background-image: url("portfolio_images/Other_image.jpg");
+            margin: 0 0 5vw 0;
+            height: auto;
+            align-items:stretch;
+        }
+
+        .container-contact p{
+            font: 20px "Raleway" !important;
+            color: white;
+            text-align: center;
+            margin: 0px 8px 12px 10px;
+        }
+
+        /* Makes image slow fade to transparency */
+            /* -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
+            mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0)); */
+
+        .column-contact {
+            float: left;
+            width: 50%;
+            margin-top: 6px;
+            padding: 20px;
+        }
+
+        .row-contact:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .contact-box {
+            width: 100%;
+            border-radius: 5px;
+            border-left-color: rgba(187, 137, 137, 0.673);
+            margin: 0px 8px 12px 10px;
+        }
+
+        .contact-box:focus {
+            outline: 2px solid rgb(187, 137, 137);
+            color: rgb(70, 70, 70);
+        }
+          
+        label, select, option {
+            color: rgb(70, 70, 70);
+            font-family: "Lato";
+            margin: 0px 8px 12px 10px;
+        }
+        
+        label {
+            color: white;
+        }
+
+        #contact-submit {
+            width: 100%;
+            height: 40px;
+            text-align: center;
+            margin: 0px 10px 12px 10px;
+            padding: none;
+            color: white;
+        }
+    /* End contact me section */
+    /* Footer */
+        footer {
+            font-size: 12px;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            color: rgb(187, 137, 137);
+             padding: 15px;
+             margin-left: 100px;
+        }
+
+        footer.portfolio {
+            -webkit-animation: color_change_portfolio 2s linear 0.5s normal forwards;
+            -moz-animation: color_change_portfolio 2s linear 0.5s normal forwards;
+            animation: color_change_portfolio 2s linear 0.5s normal forwards;
+        }
+    /* End Footer  */
+
+    /* App/mobile appearance */
+        @media screen and (max-width: 767px) {
+            .sidenav {
+                height: auto;
+                padding: 5px;
+            }
+  
+            .row.content {
+                height: auto;
+            } 
+        /* home tab cards  */
+            .home.column {
+                width: 100%;
+                display: block;
+                margin-bottom: 10px;
+            }
+
+        /* contact me box */
+            .column-contact, input[type=submit] {
+                width: 100%;
+                margin-top: 0;
+            }
+        /* resume timeline */
+            .timeline::after {
+                left: 31px;
+            }
+            
+            .container {
+                width: 100%;
+                padding-left: 70px;
+                padding-right: 25px;
+            }
+            
+            .container::before {
+                left: 60px;
+                border: medium solid white;
+                border-width: 10px 10px 10px 0;
+                border-color: transparent white transparent transparent;
+            }
+            
+            .left::after, .right::after {
+                left: 15px;
+            }
+            
+            .right {
+                left: 0%;
+            }
+
+            img {
+                max-width:100%;
+            }
+          }
+    /* end app/mobile appearance  */
