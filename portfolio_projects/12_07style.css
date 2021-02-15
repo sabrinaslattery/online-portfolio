@@ -1,0 +1,8 @@
+
+span  { font-size: 4em;
+	    font-weight: bold;
+	    font-family: helvetica, arial, sans-serif;
+	    color: blue }
+table { border-collapse: collapse }
+td    { border: 2px solid gray;
+	    width: 5em }
