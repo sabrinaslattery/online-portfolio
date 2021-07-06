@@ -1,3 +1,11 @@
+import React from 'react';
+
+class TabBarAnimations extends React.Component {
+    //mnb
+}
+
+
+
 //Section Tag Animation
 $(document).ready(function() {
     $(".animation1").click(function() {
