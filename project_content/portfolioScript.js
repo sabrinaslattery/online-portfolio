@@ -1,10 +1,9 @@
+//React Code practice
 import React from 'react';
 
 class TabBarAnimations extends React.Component {
     //mnb
 }
-
-
 
 //Section Tag Animation
 $(document).ready(function() {
@@ -30,13 +29,19 @@ $(document).ready(function() {
     });
 
 // Submit-Form Contact Change
+// function ContactForm() {
+//     function submitForm(e) {
+//         e.preventDefault();
+//         console.log
+//     }
+// }
     $("#contact-submit").click(function(event) {
         $('#contact-submit').val('Processing ...');
         $('#ContactForm').submit();
     });
     $('form').submit(function(event){
         setTimeout("location.reload(true);", 8000);
-        $('#contact-submit').val('Thank you! Allow 2-3 days for a response.\b Page will automatically reload');
+        $('#contact-submit').val('Thank you! Allow 1-2 days for a response.\b Page will automatically reload');
     });
     
 // Collapsible buttons
@@ -55,24 +60,3 @@ $(document).ready(function() {
     }
 
 });
-
-// Buttons for Dark Mode
-// $(document).ready(function(){
-//     $(".button-night").click(function() {
-//         $("body").css({"background-color": "rgb(91, 88, 88)", "color": "black"});
-//         $(".jumbotron h1").css({"color": "lightgrey"});
-//         $(".sidenav").css({"background-color": "rgb(118, 72, 72)", "color": "lightgrey" });
-//         $(".nav-tabs li a").css({"color": "lightgrey"});
-//         $("button").css({"color": "rgb(140, 134, 134)", "background-color": "rgb(46, 44, 44)",
-//         "border": "1px solid black"});
-//         $
-//     });
-//     $(".button-reg").click(function() {
-//         $("body").css({"background-color": "white", "color": "rgb(91, 88, 88)"});
-//         $(".jumbotron h1").css({"color": "black"});
-//         $(".sidenav").css({"background-color": "#f1f1f1", "color": "rgb(170, 108, 108)"});
-//         $(".nav-tabs li a").css({"color": "rgb(170, 108, 108)"});
-//         $("button").css({"color": "rgb(170, 108, 108)", "background-color": "white",
-//         "border": "none"});
-//     });
-// });
