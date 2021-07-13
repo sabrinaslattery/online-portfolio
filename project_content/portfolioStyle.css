@@ -98,7 +98,7 @@
         }
 
         #main2 {
-            margin-left:200px;
+            margin-left: 200px;
         }
     /* End general page */
     /* Nav tabs Section */
@@ -279,26 +279,27 @@
 
         .parallax-HTML {
             background-image: url("portfolio_images/JS_image.jpg");
-            min-height: 500px;
         }
 
-        .parallax-Java {
-            background-image: url("portfolio_images/Java_image.gif");
-            min-height: 500px;
-        }
-
-        .parallax-Python {
+        .parallax-iOS {
             background-image: url("portfolio_images/Python_image.jpg");
-            min-height: 500px;
+        }
+
+        .parallax-ML {
+            background-image: url("portfolio_images/Java_image.gif");
+        }
+
+        .parallax-MiniGames {
+            background-image: url("portfolio_images/minigame_image.gif");
         }
 
         .parallax-Other {
             background-image: url("portfolio_images/Other_image.gif");
-            min-height: 500px;
         }
 
-        .parallax-HTML, .parallax-Java, .parallax-Python, .parallax-Other {
+        .parallax-HTML, .parallax-iOS, .parallax-ML, .parallax-MiniGames, .parallax-Other {
             position: relative;
+            min-height: 200px;
             background-attachment: fixed;
             background-position: center;
             background-repeat: no-repeat;
@@ -317,31 +318,20 @@
         .caption span.cutout {
             background-color: white;
             color: black;
-            font-size: 4vw;
+            font-size: 2.5vw;
             font-weight: bold;
             margin: 0 auto;
-            width: 20%;
+            width: 30%;
             text-align: center;
             position: absolute;
             mix-blend-mode: screen;
-            transform: translate(-89%, -50%);
-            padding: 10px;
+            transform: translate(-78%, -50%);
+            padding: 6px;
         }
 
-        .caption span.cutout.Python {
-            width: 25%;
-            transform: translate(-83%, -50%);
-        }
-
-        .caption span.cutout.HTML {
-            font-size: 3vw;
-            width: 55%;
-            transform: translate(-63%, -50%);
-        }
-
-        .caption span.cutout.Other {
-            width: 35%;
-            transform: translate(-73%, -50%);
+        .caption span.cutout.iOS, .caption span.cutout.HTML, .caption span.cutout.ML {
+            width: 45%;
+            transform: translate(-68%, -50%);
         }
 
         .divider {

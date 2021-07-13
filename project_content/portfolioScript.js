@@ -1,10 +1,3 @@
-//React Code practice
-import React from 'react';
-
-class TabBarAnimations extends React.Component {
-    //mnb
-}
-
 //Section Tag Animation
 $(document).ready(function() {
     $(".animation1").click(function() {
@@ -28,13 +21,6 @@ $(document).ready(function() {
         section3.animate({opacity: '1.0'}, "slow");
     });
 
-// Submit-Form Contact Change
-// function ContactForm() {
-//     function submitForm(e) {
-//         e.preventDefault();
-//         console.log
-//     }
-// }
     $("#contact-submit").click(function(event) {
         $('#contact-submit').val('Processing ...');
         $('#ContactForm').submit();
