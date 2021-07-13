@@ -2,7 +2,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/sabrinaslattery/online-portfolio">
+  <a href="https://sabrinaslattery.github.io/online-portfolio/">
     <img src="https://github.com/sabrinaslattery/online-portfolio/blob/main/portfolio_preview.png" alt="Logo" width="220" height="160">
   </a>
 
