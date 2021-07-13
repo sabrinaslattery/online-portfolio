@@ -70,7 +70,7 @@ My online portfolio provides easy access to all my biggest academic projects and
 <!-- ROADMAP -->
 ## Roadmap
 
-See the [open issues](https://github.com/github_username/repo_name/issues) for a list of proposed features (and known issues).
+See the [open issues](https://github.com/sabrinaslattery/online-portfolio/issues) for a list of proposed features (and known issues).
 
 
 <!-- CONTRIBUTING -->
