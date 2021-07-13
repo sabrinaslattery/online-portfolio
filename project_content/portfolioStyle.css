@@ -5,7 +5,7 @@
 
         body {
             font: 18px "Lato" 100!important;
-            color: rgb(91, 88, 88);
+            color: rgb(45, 45, 45);
         }
 
         a {
@@ -231,14 +231,14 @@
         }
 
         .carousel-caption {
-            font: 40px "Caveat"  !important;
+            font: 30px "Raleway" !important;
             letter-spacing: 1.5px;;
             color: black;
             display: inline;
             justify-content: center;
             align-items: center;
             padding-bottom: 75px;
-            text-shadow: 2px 8px 6px rgba(0,0,0,0.2), 0px -5px 40px rgba(255,255,255,0.3);
+            text-shadow: 2px 8px 6px rgba(0,0,0,0.2), 0px -5px 30px rgba(255,255,255,0.3);
         }
 
         .item {
