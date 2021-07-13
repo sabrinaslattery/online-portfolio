@@ -3,7 +3,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/sabrinaslattery/online-portfolio">
-    <img src="https://github.com/sabrinaslattery/online-portfolio/blob/main/Screen%20Shot%202021-02-24%20at%202.27.54%20PM.png" alt="Logo" width="220" height="160">
+    <img src="https://github.com/sabrinaslattery/online-portfolio/blob/main/portfolio_preview.png" alt="Logo" width="220" height="160">
   </a>
 
   <h3 align="center">Online Portfolio</h3>
