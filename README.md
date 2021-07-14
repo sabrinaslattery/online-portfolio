@@ -2,8 +2,8 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/sabrinaslattery/online-portfolio">
-    <img src="https://github.com/sabrinaslattery/online-portfolio/blob/main/Screen%20Shot%202021-02-24%20at%202.27.54%20PM.png" alt="Logo" width="220" height="160">
+  <a href="https://sabrinaslattery.github.io/online-portfolio/">
+    <img src="https://github.com/sabrinaslattery/online-portfolio/blob/main/portfolio_preview.png" alt="Logo" width="220" height="160">
   </a>
 
   <h3 align="center">Online Portfolio</h3>
@@ -70,7 +70,7 @@ My online portfolio provides easy access to all my biggest academic projects and
 <!-- ROADMAP -->
 ## Roadmap
 
-See the [open issues](https://github.com/github_username/repo_name/issues) for a list of proposed features (and known issues).
+See the [open issues](https://github.com/sabrinaslattery/online-portfolio/issues) for a list of proposed features (and known issues).
 
 
 <!-- CONTRIBUTING -->
