@@ -214,7 +214,7 @@
             padding: 5px;
         }
     /* End Nav Tabs section  */
-    /* About Me section */
+    /* Home section */
         header h1{
             padding-top: 30px;
             font: 52px Didot, serif;
@@ -270,7 +270,61 @@
             color: white;
         }
 
-    /* End about me section */
+    /* End Home section */
+
+    /* About Me section */
+    *{
+        box-sizing: border-box;
+    }
+
+    .edu.row{
+        margin: 0 -5px;
+    }
+
+    .edu.row::after{
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    .edu.column {
+        width: 33.3%;
+    }
+
+    .edu button{
+        width: 100%;
+    }
+
+    .collapsible {
+        background-color: rgb(41, 41, 41);
+        font: 16px "Raleway";
+        color: white;
+        cursor: pointer;
+        padding: 20px;
+        text-align: center;
+        border: rgb(255, 219, 13);
+        outline: none;
+        align-items: center;
+    }
+
+    .active, .collapsible:hover{
+        background-color: rgb(199, 199, 199);
+        color: rgb(71, 71, 71);
+    }
+
+    .content{
+        font: 16px "Raleway" rgb(63, 63, 63);
+        padding: 5px 0px 5px;
+        float:left;
+        display: none;
+        height: 300px;
+        text-align: center;
+        align-items: center;
+        overflow: visible;
+        width: 100%;
+    }
+    /* End About me section */
+
     /* Portfolio Section */
         h2.title-portfolio {
             letter-spacing: 3px;
@@ -348,59 +402,7 @@
         }
 
     /* End Portfolio Section */
-    /* About Me section */
-        *{
-            box-sizing: border-box;
-        }
-
-        .edu.row{
-            margin: 0 -5px;
-        }
-
-        .edu.row::after{
-            content: "";
-            display: table;
-            clear: both;
-        }
-
-        .edu.column {
-            width: 33.3%;
-        }
-
-        .edu button{
-            width: 100%;
-        }
-
-        .collapsible {
-            background-color: rgb(117, 117, 117);
-            font: 16px "Raleway";
-            color: white;
-            cursor: pointer;
-            padding: 20px;
-            text-align: center;
-            border: rgb(255, 219, 13);
-            outline: none;
-            align-items: center;
-        }
-
-        .active, .collapsible:hover{
-            background-color: rgb(199, 199, 199);
-            color: rgb(71, 71, 71);
-        }
-
-        .content{
-            font: "Raleway" gray;
-            padding: 5px 0px 5px;
-            float:left;
-            display: none;
-            height: 300px;
-            text-align: center;
-            align-items: center;
-            overflow: hidden;
-            width: 100%;
-        }
-
-    /* End Resume and Certs section */
+    
     /* Contact Me Section  */
         #main4 {
             margin-left: 200px;
