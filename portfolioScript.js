@@ -1,3 +1,5 @@
+// import React from 'react'
+
 //Section Tag Animation
 $(document).ready(function() {
     $(".animation1").click(function() {
@@ -5,16 +7,19 @@ $(document).ready(function() {
         section1.animate({opacity: '0.0'}, "slow");
         section1.animate({opacity: '1.0'}, "slow");
     });
+
     $(".animationC").click(function() {
         var sectionC = $("PortfolioProjects&Resume.html");
         sectionC.animate({opacity: '0.0'}, "slow");
         sectionC.animate({opacity: '1.0'}, "slow");
     });
+
     $(".animation2").click(function() {
         var section2 = $("PortfolioPhotos.html");
         section2.animate({opacity: '0.0'}, "slow");
         section2.animate({opacity: '1.0'}, "slow");
     });
+
     $(".animation3").click(function() {
         var section3 = $("PortfolioContactMe.html");
         section3.animate({opacity: '0.0'}, "slow");
@@ -25,6 +30,7 @@ $(document).ready(function() {
         $('#contact-submit').val('Processing ...');
         $('#ContactForm').submit();
     });
+
     $('form').submit(function(event){
         setTimeout("location.reload(true);", 8000);
         $('#contact-submit').val('Thank you! Allow 1-2 days for a response.\b Page will automatically reload');
