@@ -28,9 +28,23 @@
             text-align: center;
         }
 
+        h4 {
+            font: 20px "Raleway" !important;
+            word-spacing: 3px;
+            font-weight: bold;
+        }
+
+        h6 {
+            font: 16px "Raleway" !important;
+        }
+
         hr {
             width: 100%;
             padding: 10 0 10 0
+        }
+        .workex {
+            font: 16px "Raleway" !important;
+            padding-bottom: 5px;
         }
           
         .button {
