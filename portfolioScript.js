@@ -1,5 +1,3 @@
-// import React from 'react'
-
 //Section Tag Animation
 $(document).ready(function() {
     $(".animation1").click(function() {
@@ -49,36 +47,5 @@ $(document).ready(function() {
                 content.style.display = "inherit";
             }
         });
-    }
-
-// Establish Connection to DB
-    let mysql = require('mysql');
-    let con = mysql.createConnection({
-        host:'localhost',
-        user: 'root',
-        password: 'ThePassword',
-        database: 'online_portfolio'
-    });
-    con.connect(function(error) {
-        if (err) throw err;
-        con.query("SELECT * FROM online_portfolio", function(err, result, fileds){
-            if (err) throw err;
-            console.log(result);
-        });
-    });
-
-
-// Retrieve Data
-    function getProjects(link) {
-        if (link = "") {
-            document.getElementById("projectLink").innerHTML = "";
-            return;
-        }
-        const xhttp  = new XMLHttpRequest();
-        //load project information
-        xhttp.onload = function() {
-            document.getElementById("projectLink").innerHTML = this.responseText;
-        }
-        xhttp.open("GET", "")
     }
 });
