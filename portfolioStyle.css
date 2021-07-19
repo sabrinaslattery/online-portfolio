@@ -337,6 +337,11 @@
         overflow: visible;
         width: 100%;
     }
+
+    .coursework, .certifications{
+        text-align:center;
+        word-spacing: 2px;
+    }
     /* End About me section */
 
     /* Portfolio Section */

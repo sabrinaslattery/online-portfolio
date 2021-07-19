@@ -6,173 +6,208 @@
 
 <!DOCTYPE html>
 <html lang>
-    <head>
-        <title>About Me</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- CSS Stylesheets -->
-        <link rel="stylesheet" type="text/css" href="projectstylesheet.css">
-        <link rel="stylesheet" type="text/css" href="portfolioStyle.css">
-        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-        <!-- Font Styles-->
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Caveat">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Great Vibes">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <!-- Font Sources -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-        <script src="https://use.fontawesome.com/1f0c06a831.js"></script>
-        <!-- JS Source -->
-        <script src="portfolioScript.js"></script>
-        <script src="data_retrieval.js"></script>
-    </head>
 
-    <body>
-    <!-- Navigation -->
-        <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center" >
-            <img class="avatar" src="portfolio_images/profile.jpg" alt="profile" style="width:100%;">
-            <a href="index.html" class="w3-bar-item w3-button w3-padding-large">
-                <em class="fa fa-home w3-xxlarge"></em>
-                <p>Home</p>
-            </a>
-            <a href="PortfolioAboutMe.html" class="active w3-bar-item w3-button w3-padding-large">
-                <em class="fa fa-user w3-xxlarge"></em>
-                <p>About Me</p>
-            </a>
-            <a href="PortfolioPortfolio.html" class="w3-bar-item w3-button w3-padding-large">
-                <em class="fa fa-eye w3-xxlarge"></em>
-                <p>Portfolio</p>
-            </a>
-            <a href="PortfolioContactMe.html" class="w3-bar-item w3-button w3-padding-large">
-                <em class="fa fa-envelope w3-xxlarge"></em>
-                <p style="padding-top: 2px;">Contact Me</p>
-            </a>
-        </nav>
+<head>
+    <title>About Me</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="projectstylesheet.css">
+    <link rel="stylesheet" type="text/css" href="portfolioStyle.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!-- Font Styles-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Caveat">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Great Vibes">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Font Sources -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://use.fontawesome.com/1f0c06a831.js"></script>
+    <!-- JS Source -->
+    <script src="portfolioScript.js"></script>
+    <script src="data_retrieval.js"></script>
+</head>
+
+<body>
+    <!-- Nav Bar -->
+    <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+        <img class="avatar" src="portfolio_images/profile.jpg" alt="profile" style="width:100%;">
+        <a href="index.html" class="w3-bar-item w3-button w3-padding-large">
+            <em class="fa fa-home w3-xxlarge"></em>
+            <p>Home</p>
+        </a>
+        <a href="PortfolioAboutMe.html" class="active w3-bar-item w3-button w3-padding-large">
+            <em class="fa fa-user w3-xxlarge"></em>
+            <p>About Me</p>
+        </a>
+        <a href="PortfolioPortfolio.html" class="w3-bar-item w3-button w3-padding-large">
+            <em class="fa fa-eye w3-xxlarge"></em>
+            <p>Portfolio</p>
+        </a>
+        <a href="PortfolioContactMe.html" class="w3-bar-item w3-button w3-padding-large">
+            <em class="fa fa-envelope w3-xxlarge"></em>
+            <p style="padding-top: 2px;">Contact Me</p>
+        </a>
+    </nav>
     <!-- For small screens, hidden on main -->
-        <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
-            <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
-              <a href="index.html" class="w3-bar-item w3-button" 
-                style="width:25% !important">Home</a>
-              <a href="PortfolioResume&Certs.html" class="w3-bar-item w3-button" 
-                style="width:25% !important">About Me</a>
-              <a href="PortfolioPortfolio.html" class="w3-bar-item w3-button" 
-                style="width:25% !important">Portfolio</a>
-              <a href="PortfolioContactMe.html" class="w3-bar-item w3-button" 
-                style="width:25% !important">Contact Me</a>
-            </div>
+    <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+        <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+            <a href="index.html" class="w3-bar-item w3-button" style="width:25% !important">Home</a>
+            <a href="PortfolioResume&Certs.html" class="w3-bar-item w3-button" style="width:25% !important">About Me</a>
+            <a href="PortfolioPortfolio.html" class="w3-bar-item w3-button" style="width:25% !important">Portfolio</a>
+            <a href="PortfolioContactMe.html" class="w3-bar-item w3-button" style="width:25% !important">Contact Me</a>
         </div>
+    </div>
     <!-- Main Content -->
-        <div class="w3-padding-large" id="PortfolioProjects&Resume.html">
-            <div class="w3-justify w3-padding-64" id="main">
-                <h2 style="text-align:center;font-weight: bold;">About Me</h2>
-                <hr>
-                <form action="/aboutMe" method="POST"></form>
-                    <!-- 
-                    Hi! My name is Sabrina Slattery and I am a web developer, machine learning enthusiast, and future software engineer.  
-                    <br><br>
-                    I recently graduated summa cum laude from Notre Dame de Namur University with a B.S., Computer Science and an excitement
-                    to start my career in tech.
-                    During my undergraduate studies I have become fluent in Python and Java, as well as worked in-depth with web development and mobile app
-                    programming techniques. I have a passion for machine learning, specifically natural language processing (NLP) and deep learning, and 
-                    will be pursuing a masters in computational neursocience in the next few years. 
-                    <br><br>
-                    Currently, I'm working on an app-based non-profit organization to help Bay Area locals give back to their communities through volunteering. 
-                    I'm also looking to join a dynamic, innovative engineering team as a full-time software engineer. Feel free to contact me with any
-                    industry advice, job suggestions, or feedback – I would love to hear from you! 
-                    <br><br>
-                    If you would like to connect with me on LinkedIn, see my
-                    GitHub repositories, or follow me on my journey through the tech industry, you can find links to my social media profiles at the bottom of each page or 
-                    on my <a href="https://sabrinaslattery.github.io/online-portfolio/PortfolioContactMe.html">'Contact Me'</a> page.
-                    <br><br>
-                    Thank you for visiting! -->
-                    <br>
-                <hr>
-                <h2>Education</h2><br>
-                <div class="edu row">
-                    <div class="edu column">
+    <div class="w3-padding-large" id="PortfolioProjects&Resume.html">
+        <div class="w3-justify w3-padding-64" id="main">
+            <h2 style="text-align:center;font-weight: bold;">About Me</h2>
+            <hr>
+            Hi! My name is Sabrina Slattery and I am a web developer, machine learning enthusiast, and future software
+            engineer.
+            I recently graduated summa cum laude from Notre Dame de Namur University with a B.S., Computer Science and
+            an excitement
+            to start my career in tech.
+            <br><br>
+            During my undergraduate studies I have become fluent in Python and Java, as well as worked in-depth with web
+            development
+            and mobile app programming techniques. I have a passion for machine learning, specifically
+            natural language processing (NLP) and deep learning, and will be pursuing a masters in computational
+            neursocience
+            in the next few years.
+            <br><br>
+            Currently, I am working on an app-based non-profit organization to help Bay Area locals give back to their
+            communities
+            through volunteering. I am also looking to join a dynamic, innovative engineering team as a full-time
+            software engineer.
+            Feel free to contact me with any industry advice, job suggestions, or feedback – I would love to hear from
+            you!
+            <br><br>
+            If you would like to connect with me on LinkedIn, see my GitHub repositories, or follow me on my journey
+            through the
+            tech industry, you can find links to my social media profiles at the bottom of each page or on my contact
+            page.
+            <br><br>
+            Thank you for visiting!
+            <br>
+            <hr>
+            <!-- Education Drop-Downs -->
+            <h2>Education</h2><br>
+            <div class="edu row">
+                <div class="edu column">
                     <button type="button" class="WSU collapsible">Washington State University</button>
-                        <div class="WSU content column"><br><br>
-                            Attended: August 2015 – May 2017<br><br>
-                            <img src="portfolio_images/WSU_Logo.png" alt="WSU" class="responsive" 
+                    <div class="WSU content column"><br><br>
+                        Attended: August 2015 – May 2017<br><br>
+                        <img src="portfolio_images/WSU_Logo.png" alt="WSU" class="responsive"
                             style="height:150px; width:150px;"><br><br>
-                            Completed 65 Credits Towards a B.S., Neuroscience
-                        </div>
+                        Completed 65 Credits Towards a B.S., Neuroscience
                     </div>
-                    <div class="edu column">
+                </div>
+                <div class="edu column">
                     <button type="button" class="WVC collapsible">West Valley College</button>
-                        <div class="WVC content column"><br><br>
-                            Attended: August 2018 – December 2020<br><br>
-                            <img src="portfolio_images/WVC_Logo.png" alt="WVC" class="responsive" 
+                    <div class="WVC content column"><br><br>
+                        Attended: August 2018 – December 2020<br><br>
+                        <img src="portfolio_images/WVC_Logo.png" alt="WVC" class="responsive"
                             style="height:150px; width:150px;"><br><br>
-                            Completed Transfer Degree for <br>B.S., Computer Science
-                        </div>
+                        Completed Transfer Degree for <br>B.S., Computer Science
                     </div>
-                    <div class="edu column">
+                </div>
+                <div class="edu column">
                     <button type="button" class="NDNU collapsible">Notre Dame de Namur University</button>
-                        <div class="NDNU content column"><br><br>
-                            Attended: January 2020 – May 2021<br><br>
-                            <img src="portfolio_images/NDNU_Logo.png" alt="NDNU" class="responsive" 
+                    <div class="NDNU content column"><br><br>
+                        Attended: January 2020 – May 2021<br><br>
+                        <img src="portfolio_images/NDNU_Logo.png" alt="NDNU" class="responsive"
                             style="height:150px; width:150px;"><br><br>
-                            B.S., Computer Science
-                        </div>
+                        B.S., Computer Science
                     </div>
                 </div>
-                <div class="divider note">
-                    <p>Select a box to learn more.</p>
-                </div>
-                <hr>
-                <h2>Work Experience</h2>
-                <div>
-                    <h4>Compass Group at Google | Mountain View, CA | 07/2019 - Present</h4>
-                    <h6>Team Lead – Full-Time</h6>
-                        <ul class="workex">
-                            <li>Supervises café staff and manages inventory, budgets, and orders using hospitality management software.</li>
-                            <li>Promoted from team member to team lead within a year.</li>
-                        </ul>
-                    <br>
-                    <h4>Camp EdventureMore | Los Gatos, CA | 06/2018 - 09/2018</h4>
-                    <h6>Technology Instructor – Seasonal</h6>
-                        <ul class="workex">
-                            <li>Taught campers Java and Lua through video game programming in Code Kingdoms, Roblox Studio, and Minecraft Turtle.</li>
-                            <li>Developed new Python projects and mentored campers through testing and debugging their software.
-                            </li>
-                        </ul>
-                    <br>
-                    <h4>Fuch Lab, Washington State University | Pullman, WA | 01/2016 - 01/2017</h4>
-                    <h6>Neuroscience Research Intern – Part-Time</h6>
-                        <ul class="workex">
-                            <li>Dedicated 20 hours per week to research during the school year and helped to secure 
-                                NIH funding for further exploration.</li>
-                            <li>Compiled, analyzed, and visualized research data using MySQL Workbench and JupyterLab.</li>
-                        </ul>
-                    <br>
-                    <h4>Presentation Robotics Club | San Jose, CA | 08/2013 - 05/2015</h4>
-                    <h6>Coding and Mechanics Team Member – Part-Time</h6>
-                        <ul class="workex">
-                            <li>Collaborated with team members on building, testing and debugging 3 award-winning robots.</li>
-                            <li>Performed 3-D design on SOLIDWORKS for part modification and fabrication..</li>
-                            <li>Programmed robot’s functional movements in C++ and JavaScript.</li>
-                        </ul>
-                    <br>
-                </div>
+            </div>
+            <div class="divider note">
+                <p>Select a box to learn more.</p>
+            </div>
+            <hr>
+            <!-- Work Experience Section -->
+            <h2>Work Experience</h2>
+            <br>
+            <div>
+                <h4>Compass Group at Google | Mountain View, CA | 07/2019 - Present</h4>
+                <h6>Team Lead – Full-Time</h6>
+                <ul class="workex">
+                    <li>Supervises café staff and manages inventory, budgets, and orders using hospitality management
+                        software.</li>
+                    <li>Promoted from team member to team lead within a year.</li>
+                </ul>
                 <br>
+                <h4>Camp EdventureMore | Los Gatos, CA | 06/2018 - 09/2018</h4>
+                <h6>Technology Instructor – Seasonal</h6>
+                <ul class="workex">
+                    <li>Taught campers Java and Lua through video game programming in Code Kingdoms, Roblox Studio, and
+                        Minecraft Turtle.</li>
+                    <li>Developed new Python projects and mentored campers through testing and debugging their software.
+                    </li>
+                </ul>
+                <br>
+                <h4>Fuch Lab, Washington State University | Pullman, WA | 01/2016 - 01/2017</h4>
+                <h6>Neuroscience Research Intern – Part-Time</h6>
+                <ul class="workex">
+                    <li>Dedicated 20 hours per week to research during the school year and helped to secure
+                        NIH funding for further exploration.</li>
+                    <li>Compiled, analyzed, and visualized research data using MySQL Workbench and JupyterLab.</li>
+                </ul>
+                <br>
+                <h4>Presentation Robotics Club | San Jose, CA | 08/2013 - 05/2015</h4>
+                <h6>Coding and Mechanics Team Member – Part-Time</h6>
+                <ul class="workex">
+                    <li>Collaborated with team members on building, testing and debugging 3 award-winning robots.</li>
+                    <li>Performed 3-D design on SOLIDWORKS for part modification and fabrication..</li>
+                    <li>Programmed robot’s functional movements in C++ and JavaScript.</li>
+                </ul>
+            </div>
+            <hr>
+            <!-- Coursework -->
+            <h2>Relevant Coursework</h2>
+            <br>
+            <div class="coursework">
+                <p>Python Programming || Computational Neuroscience || Web Development - Front-End and Back-End || Data Communication   
+                <br><br>
+                CodePath iOS Programming || Database Management Systems || Software Engineering: Best Practices || Network Theory and Design
+                <br><br>
+                OOP Data Structures || Algorithms || Machine Learning || Discrete Matematics || QA Testing 
+                <br>
+             </p>
+            </div>
+            <hr>
+            <!-- certifications -->
+            <h2>Certifications</h2>
+            <br>
+            <div class="certifications">
+                <strong><a href="https://www.coursera.org/account/accomplishments/verify/T2LAW42N8P3C">
+                    Neural Networks and Deep Learning</a></strong>
+                    <br><br>
+                <p>Issued By: <a hre="https://www.coursera.org/learn/neural-networks-deep-learning">
+                    DeepLearning.AI</a></p>
+                <p>Certification Earned: May 2021</p>
+                <p>Expiration: Does Not Expire</p>
             </div>
         </div>
-    </body>
+    </div>
+</body>
+<!-- footer -->
+<footer>
+    <div class="container-fluid text-center">
+        <a href="http://www.linkedin.com/in/sabrina-slattery-803076171">
+            <i class="fa fa-linkedin-square w3-hover-opacity w3-xlarge" aria-hidden="true"></i></a>
+        <a href="http://github.com/sabrinaslattery">
+            <i class="fa fa-github w3-hover-opacity w3-xlarge" aria-hidden="true"></i></a>
+        <a href="http://www.instagram.com/coderbellabri/">
+            <i class="fa fa-instagram w3-hover-opacity w3-xlarge" aria-hidden="true"></i></a><br><br>
+        <p>Created by Sabrina Slattery • Designed Using W3Schools and Bootstrap Templates
+            • Last Updated July 19 2021</p>
+    </div>
+</footer>
 
-    <footer>
-        <div class="container-fluid text-center">
-            <a href="http://www.linkedin.com/in/sabrina-slattery-803076171">
-                <i class="fa fa-linkedin-square w3-hover-opacity w3-xlarge" aria-hidden="true"></i></a>
-            <a href="http://github.com/sabrinaslattery">
-                <i class="fa fa-github w3-hover-opacity w3-xlarge" aria-hidden="true"></i></a>
-            <a href="http://www.instagram.com/coderbellabri/">
-                <i class="fa fa-instagram w3-hover-opacity w3-xlarge" aria-hidden="true"></i></a><br><br>
-            <p>Created by Sabrina Slattery • Designed Using W3Schools and Bootstrap Templates
-                • Last Updated July 13 2021</p>
-        </div>
-    </footer>
 </html>
