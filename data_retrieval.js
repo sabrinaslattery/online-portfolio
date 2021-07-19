@@ -1,7 +1,8 @@
 // Establish DB Connection
-let mysql = require('mysql');
-let display = express();
-let con = mysql.createConnection({
+var mysql = require('mysql');
+var express = require('express');
+var display = express();
+var con = mysql.createConnection({
     host:'localhost',
     user: 'root',
     password: 'ThePassword',
@@ -12,7 +13,7 @@ let con = mysql.createConnection({
 //about biography
 display.get('aboutMe', function(request, response){
     console.log('GET req success: aboutMe for About Me')
-    con.query("SELECT synop FROM about", function (err, result){
+    con.query("SELECT Synopsis FROM About", function (err, result){
         if (err) throw err;
         else{
             response.send(result)
