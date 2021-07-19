@@ -48,8 +48,10 @@
 ## About The Project
 
 Final online portfolio created from scratch for practice with web-building languages. <br />
-Web Application Front-End Programming final, independent project submitted 5 May 2020. <br />
-Taught by: Chung-Wen Tsao at Notre Dame de Namur University, Course CSC-2277. <br />
+Contains a selection of projects, my resume, experience, and certifications, as well as ways to contact/connect with me. <br />
+
+Currently experimenting with Node.js and Express.js in conjunction with MySQL to expand my knowledge of backend practices. <br />
+Feel free to leave feedback and suggestions in my Issues tab!
 
 Check out the website: <br />
 https://sabrinaslattery.github.io/online-portfolio/ <br />
