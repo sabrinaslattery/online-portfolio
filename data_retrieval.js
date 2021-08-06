@@ -49,7 +49,6 @@ app.get('/aboutMe', function(request, response){
     });
 });
 
-
 //Get work experience
 app.get('/workEx', function(req,res){
     console.log('GET req success: workEx for About Me')
